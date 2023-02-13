@@ -7,6 +7,7 @@
 
 SRC    =	main.c	\
 			option1.c 	\
+			option_two.c 	\
 
 OBJ    =    $(SRC:.c=.o)
 

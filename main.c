@@ -4,11 +4,7 @@
 ** File description:
 ** main
 */
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-void first_option(double n, double k);
+#include "include/106_bombyx.h"
 
 int my_str_isfloat(char const *str)
 {
@@ -37,6 +33,6 @@ int main(int ac, char **av)
     }
     if (ac == 3)
         first_option(atof(av[1]), atof(av[2]));
-    //if (ac == 4)
-    //    //option2
+    if (ac == 4)
+        option_two(atof(av[1]), atoi(av[2]), atoi(av[3]));
 }
