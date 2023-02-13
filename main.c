@@ -4,6 +4,11 @@
 ** File description:
 ** main
 */
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+void first_option(double n, double k);
 
 int my_str_isfloat(char const *str)
 {
@@ -31,7 +36,7 @@ int main(int ac, char **av)
             return (84);
     }
     if (ac == 3)
-        //option1
-    if (ac == 4)
-        //option2
+        first_option(atof(av[1]), atof(av[2]));
+    //if (ac == 4)
+    //    //option2
 }
