@@ -12,7 +12,7 @@ int option_two(double pop, int start, int end)
     double pop_temp = pop;
     int i = 0;
 
-    for (double k = 1; ; k = k + 0.01) {
+    for (double k = 1; k < 4 ; k = k + 0.01) {
         pop = pop_temp;
         for (; i < start; i++)
             pop = k * pop * ((1000 - pop) / 1000);
