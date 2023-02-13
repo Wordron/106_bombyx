@@ -31,7 +31,7 @@ int main(int ac, char **av)
         if (my_str_isfloat(av[i]) == 0)
             return (84);
     }
-    if (ac == 3) {
+    if (ac == 3 && (atof(av[2]) >= 1 && atof(av[2]) <= 4)) {
         first_option(atof(av[1]), atof(av[2]));
     }
     if (ac == 4) {
